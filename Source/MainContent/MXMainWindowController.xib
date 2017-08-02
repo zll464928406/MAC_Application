@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MXMainWindowController">
+            <connections>
+                <outlet property="contentView" destination="TKL-VD-Z22" id="H2o-4K-6OU"/>
+                <outlet property="slideView" destination="dZY-IK-eYI" id="Ptj-zS-rUa"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="1100" height="540"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <value key="minSize" type="size" width="1100" height="540"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="1100" height="540"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dZY-IK-eYI">
+                        <rect key="frame" x="10" y="10" width="302" height="520"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="302" id="gVa-fe-xCs"/>
+                        </constraints>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="TKL-VD-Z22">
+                        <rect key="frame" x="322" y="10" width="768" height="520"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dZY-IK-eYI" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="10" id="Kce-cU-CXs"/>
+                    <constraint firstAttribute="bottom" secondItem="TKL-VD-Z22" secondAttribute="bottom" constant="10" id="Swz-j4-VIx"/>
+                    <constraint firstItem="TKL-VD-Z22" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="10" id="UdJ-lb-msO"/>
+                    <constraint firstAttribute="bottom" secondItem="dZY-IK-eYI" secondAttribute="bottom" constant="10" id="W6s-av-fKl"/>
+                    <constraint firstItem="TKL-VD-Z22" firstAttribute="leading" secondItem="dZY-IK-eYI" secondAttribute="trailing" constant="10" id="dao-CD-4HM"/>
+                    <constraint firstAttribute="trailing" secondItem="TKL-VD-Z22" secondAttribute="trailing" constant="10" id="hxJ-WY-5kR"/>
+                    <constraint firstItem="dZY-IK-eYI" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="10" id="wTe-0z-fHv"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="E365323E-38B2-44D3-9525-C6719064A972" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="mTv-Es-kCx">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="4C759029-0D46-43FA-8C28-62F1842D6173" label="" paletteLabel="Custom View" tag="-1" id="Muc-24-mXW">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="152" height="44"/>
+                        <size key="maxSize" width="163" height="96"/>
+                        <customView key="view" id="hhb-ct-HLM">
+                            <rect key="frame" x="0.0" y="14" width="152" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="26F0D65E-9FA2-42C7-A7AD-ABFA78CFFB7F" label="" paletteLabel="Custom View" id="jfN-4A-S6W">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="38" height="17"/>
+                        <size key="maxSize" width="50" height="17"/>
+                        <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="IDb-Wk-O4c">
+                            <rect key="frame" x="13" y="14" width="50" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Moxtra" id="M9f-jK-jZP">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="AD7605A2-2CE2-4A7A-99FA-92CB7DD8D8E2" label="" paletteLabel="Custom View" id="Kue-zS-sMt">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="76" height="28"/>
+                        <size key="maxSize" width="124" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="hDt-MM-Pme">
+                            <rect key="frame" x="0.0" y="14" width="94" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="KQO-lb-CbT">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="upload_smell">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="record_clip" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="capture_screen">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="actionsSegmentedControlClicked:" target="-2" id="cgE-Pz-pa0"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Sz2-W5-1cj"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Ll6-Tg-40t"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="jLS-vq-PhO"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="okl-gz-Xbl"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="fQf-bv-ZYk"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Muc-24-mXW"/>
+                    <toolbarItem reference="fQf-bv-ZYk"/>
+                    <toolbarItem reference="jfN-4A-S6W"/>
+                    <toolbarItem reference="fQf-bv-ZYk"/>
+                    <toolbarItem reference="Kue-zS-sMt"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="126"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="capture_screen" width="14" height="14"/>
+        <image name="record_clip" width="14" height="14"/>
+        <image name="upload_smell" width="14" height="14"/>
+    </resources>
+</document>
