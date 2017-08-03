@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A354BE661F2AE3E500229083"
-            BuildableName = "Moxtra_Beta.app"
-            BlueprintName = "Moxtra_Beta"
-            ReferencedContainer = "container:Moxtra_Beta.xcodeproj">
+            BuildableName = "MAC_Demo.app"
+            BlueprintName = "MAC_Demo"
+            ReferencedContainer = "container:MAC_Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A354BE661F2AE3E500229083"
-            BuildableName = "Moxtra_Beta.app"
-            BlueprintName = "Moxtra_Beta"
-            ReferencedContainer = "container:Moxtra_Beta.xcodeproj">
+            BuildableName = "MAC_Demo.app"
+            BlueprintName = "MAC_Demo"
+            ReferencedContainer = "container:MAC_Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
