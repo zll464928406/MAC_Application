@@ -38,9 +38,9 @@
         make.edges.equalTo(self.slideView);
     }];
 
-    self.slideContentView.dataArray = @[@"MXTableViewController",
-                                        @"MXPopUpViewController",
-                                        @"MXButtonViewController"
+    self.slideContentView.dataArray = @[@{@"type":@"NSTableView", @"className":@"MXTableViewController"},
+                                        @{@"type":@"NSPopUpButton", @"className":@"MXPopUpViewController"},
+                                        @{@"type":@"NSButton", @"className":@"MXButtonViewController"}
                                         ];
     [self.slideContentView reloadTableView];
 }
@@ -66,7 +66,7 @@
 #pragma mark - MXSlideViewDelegate
 -(void)slideViewDelegate:(MXSlideView *)slideView didselectedRow:(NSInteger)row
 {
-    NSString *viewName = [self.slideContentView.dataArray objectAtIndex:row];
+    NSString *viewName = [[self.slideContentView.dataArray objectAtIndex:row] valueForKey:@"className"];
     NSLog(@"clicked on row:%ld, %@", row, viewName);
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof NSView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj removeFromSuperview];

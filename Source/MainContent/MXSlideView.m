@@ -123,7 +123,8 @@
     {
         cell = [[MXSlideTopicCell alloc] init];
     }
-    cell.titleField.stringValue = [NSString stringWithFormat:@"%ld. %@",row + 1,self.dataArray[row]];
+    NSString *typeString = [[self.dataArray objectAtIndex:row] valueForKey:@"type"];
+    cell.titleField.stringValue = [NSString stringWithFormat:@"%ld. %@", row + 1, typeString];
     return cell;
 }
 
