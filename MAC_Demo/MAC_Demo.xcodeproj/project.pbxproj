@@ -12,6 +12,8 @@
 		A24793051F323B5600AECA8F /* NSButton+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = A24793041F323B5600AECA8F /* NSButton+Extend.m */; };
 		A247930E1F3241E600AECA8F /* button_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A247930C1F3241E600AECA8F /* button_bg.png */; };
 		A247930F1F3241E600AECA8F /* button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A247930D1F3241E600AECA8F /* button_bg@2x.png */; };
+		A29349241F33717D005A235C /* MXNSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29349221F33717D005A235C /* MXNSDatePickerViewController.m */; };
+		A29349251F33717D005A235C /* MXNSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29349231F33717D005A235C /* MXNSDatePickerViewController.xib */; };
 		A33224291F31CCE800BE3726 /* MXPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33224271F31CCE800BE3726 /* MXPopUpViewController.m */; };
 		A332242A1F31CCE800BE3726 /* MXPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33224281F31CCE800BE3726 /* MXPopUpViewController.xib */; };
 		A33224311F31CF6100BE3726 /* preference.png in Resources */ = {isa = PBXBuildFile; fileRef = A332242F1F31CF6100BE3726 /* preference.png */; };
@@ -96,6 +98,9 @@
 		A24793041F323B5600AECA8F /* NSButton+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSButton+Extend.m"; sourceTree = "<group>"; };
 		A247930C1F3241E600AECA8F /* button_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg.png; sourceTree = "<group>"; };
 		A247930D1F3241E600AECA8F /* button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg@2x.png"; sourceTree = "<group>"; };
+		A29349211F33717D005A235C /* MXNSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNSDatePickerViewController.h; sourceTree = "<group>"; };
+		A29349221F33717D005A235C /* MXNSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNSDatePickerViewController.m; sourceTree = "<group>"; };
+		A29349231F33717D005A235C /* MXNSDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNSDatePickerViewController.xib; sourceTree = "<group>"; };
 		A33224261F31CCE800BE3726 /* MXPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPopUpViewController.h; sourceTree = "<group>"; };
 		A33224271F31CCE800BE3726 /* MXPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPopUpViewController.m; sourceTree = "<group>"; };
 		A33224281F31CCE800BE3726 /* MXPopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXPopUpViewController.xib; sourceTree = "<group>"; };
@@ -228,6 +233,16 @@
 				A24793041F323B5600AECA8F /* NSButton+Extend.m */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		A29349201F337174005A235C /* NSDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A29349211F33717D005A235C /* MXNSDatePickerViewController.h */,
+				A29349221F33717D005A235C /* MXNSDatePickerViewController.m */,
+				A29349231F33717D005A235C /* MXNSDatePickerViewController.xib */,
+			);
+			path = NSDatePicker;
 			sourceTree = "<group>";
 		};
 		A33224251F31CC9F00BE3726 /* PopUpButton */ = {
@@ -407,6 +422,7 @@
 		A356492B1F305F8A0014C41F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A29349201F337174005A235C /* NSDatePicker */,
 				A24792FD1F323ABE00AECA8F /* Button */,
 				A33224251F31CC9F00BE3726 /* PopUpButton */,
 				A356492C1F305F8A0014C41F /* TableView */,
@@ -556,6 +572,7 @@
 				A35649711F306DFC0014C41F /* star@2x.png in Resources */,
 				A35648F51F3049910014C41F /* status_logo_black@2x.png in Resources */,
 				A35649351F3061CD0014C41F /* app_common@2x.png in Resources */,
+				A29349251F33717D005A235C /* MXNSDatePickerViewController.xib in Resources */,
 				A35649781F306DFC0014C41F /* upload_smell@2x.png in Resources */,
 				A35649691F306DFC0014C41F /* more.png in Resources */,
 				A356495F1F306DFC0014C41F /* clip_screen.png in Resources */,
@@ -614,6 +631,7 @@
 				A35649091F3051080014C41F /* CCNStatusItemWindow.m in Sources */,
 				A356491D1F3056DE0014C41F /* MXLoginWindowController.m in Sources */,
 				A354BECD1F2AED3500229083 /* NSArray+MASAdditions.m in Sources */,
+				A29349241F33717D005A235C /* MXNSDatePickerViewController.m in Sources */,
 				A356490B1F3051080014C41F /* CCNStatusItemWindowConfiguration.m in Sources */,
 				A354BECC1F2AED3500229083 /* MASViewConstraint.m in Sources */,
 				A354BECB1F2AED3500229083 /* MASViewAttribute.m in Sources */,

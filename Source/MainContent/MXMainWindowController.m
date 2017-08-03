@@ -40,7 +40,8 @@
 
     self.slideContentView.dataArray = @[@{@"type":@"NSTableView", @"className":@"MXTableViewController"},
                                         @{@"type":@"NSPopUpButton", @"className":@"MXPopUpViewController"},
-                                        @{@"type":@"NSButton", @"className":@"MXButtonViewController"}
+                                        @{@"type":@"NSButton", @"className":@"MXButtonViewController"},
+                                        @{@"type":@"NSDatePicker", @"className":@"MXNSDatePickerViewController"}
                                         ];
     [self.slideContentView reloadTableView];
 }
