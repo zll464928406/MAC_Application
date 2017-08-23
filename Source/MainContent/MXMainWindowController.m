@@ -40,7 +40,8 @@
 
     self.slideContentView.dataArray = @[@"MXTableViewController",
                                         @"MXPopUpViewController",
-                                        @"MXButtonViewController"
+                                        @"MXButtonViewController",
+                                        @"MXPopoverViewController"
                                         ];
     [self.slideContentView reloadTableView];
 }
