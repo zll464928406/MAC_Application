@@ -87,6 +87,10 @@
 		A35649781F306DFC0014C41F /* upload_smell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A356495A1F306DFC0014C41F /* upload_smell@2x.png */; };
 		A35649911F3177730014C41F /* MXTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A356498E1F3177730014C41F /* MXTableRowView.m */; };
 		A35649921F3177730014C41F /* MXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A35649901F3177730014C41F /* MXTableView.m */; };
+		A38522351F501AFF0093C316 /* MXDayPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38522331F501AFF0093C316 /* MXDayPickerViewController.m */; };
+		A38522361F501AFF0093C316 /* MXDayPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38522341F501AFF0093C316 /* MXDayPickerViewController.xib */; };
+		A385223A1F501C6C0093C316 /* MXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A38522391F501C6C0093C316 /* MXCalendarView.m */; };
+		A385223D1F5021E90093C316 /* MXDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A385223C1F5021E90093C316 /* MXDayCell.m */; };
 		A3DAC80E1F4D81E000F8A172 /* MXPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAC80C1F4D81E000F8A172 /* MXPopoverViewController.m */; };
 		A3DAC80F1F4D81E000F8A172 /* MXPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DAC80D1F4D81E000F8A172 /* MXPopoverViewController.xib */; };
 		A3DAC8131F4D83B500F8A172 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAC8111F4D83B500F8A172 /* ShareViewController.m */; };
@@ -212,6 +216,13 @@
 		A356498E1F3177730014C41F /* MXTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTableRowView.m; sourceTree = "<group>"; };
 		A356498F1F3177730014C41F /* MXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTableView.h; sourceTree = "<group>"; };
 		A35649901F3177730014C41F /* MXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTableView.m; sourceTree = "<group>"; };
+		A38522321F501AFF0093C316 /* MXDayPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDayPickerViewController.h; sourceTree = "<group>"; };
+		A38522331F501AFF0093C316 /* MXDayPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDayPickerViewController.m; sourceTree = "<group>"; };
+		A38522341F501AFF0093C316 /* MXDayPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXDayPickerViewController.xib; sourceTree = "<group>"; };
+		A38522381F501C6C0093C316 /* MXCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCalendarView.h; sourceTree = "<group>"; };
+		A38522391F501C6C0093C316 /* MXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCalendarView.m; sourceTree = "<group>"; };
+		A385223B1F5021E90093C316 /* MXDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDayCell.h; sourceTree = "<group>"; };
+		A385223C1F5021E90093C316 /* MXDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDayCell.m; sourceTree = "<group>"; };
 		A3DAC80B1F4D81E000F8A172 /* MXPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPopoverViewController.h; sourceTree = "<group>"; };
 		A3DAC80C1F4D81E000F8A172 /* MXPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPopoverViewController.m; sourceTree = "<group>"; };
 		A3DAC80D1F4D81E000F8A172 /* MXPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXPopoverViewController.xib; sourceTree = "<group>"; };
@@ -422,6 +433,7 @@
 		A356492B1F305F8A0014C41F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A38522311F501A810093C316 /* Daypicker */,
 				A3DAC80A1F4D81BE00F8A172 /* Popover */,
 				A24792FD1F323ABE00AECA8F /* Button */,
 				A33224251F31CC9F00BE3726 /* PopUpButton */,
@@ -491,6 +503,28 @@
 				A35649901F3177730014C41F /* MXTableView.m */,
 			);
 			path = extend;
+			sourceTree = "<group>";
+		};
+		A38522311F501A810093C316 /* Daypicker */ = {
+			isa = PBXGroup;
+			children = (
+				A38522371F501C250093C316 /* Calendar */,
+				A38522321F501AFF0093C316 /* MXDayPickerViewController.h */,
+				A38522331F501AFF0093C316 /* MXDayPickerViewController.m */,
+				A38522341F501AFF0093C316 /* MXDayPickerViewController.xib */,
+			);
+			path = Daypicker;
+			sourceTree = "<group>";
+		};
+		A38522371F501C250093C316 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A38522381F501C6C0093C316 /* MXCalendarView.h */,
+				A38522391F501C6C0093C316 /* MXCalendarView.m */,
+				A385223B1F5021E90093C316 /* MXDayCell.h */,
+				A385223C1F5021E90093C316 /* MXDayCell.m */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		A3DAC80A1F4D81BE00F8A172 /* Popover */ = {
@@ -595,6 +629,7 @@
 				A247930E1F3241E600AECA8F /* button_bg.png in Resources */,
 				A33224311F31CF6100BE3726 /* preference.png in Resources */,
 				A35649721F306DFC0014C41F /* star_yellow.png in Resources */,
+				A38522361F501AFF0093C316 /* MXDayPickerViewController.xib in Resources */,
 				A35649701F306DFC0014C41F /* star.png in Resources */,
 				A33224321F31CF6100BE3726 /* preference@2x.png in Resources */,
 				A356496D1F306DFC0014C41F /* recording.png in Resources */,
@@ -642,6 +677,7 @@
 				A35649081F3051080014C41F /* CCNStatusItemDropView.m in Sources */,
 				A354BECA1F2AED3500229083 /* MASLayoutConstraint.m in Sources */,
 				A35649921F3177730014C41F /* MXTableView.m in Sources */,
+				A38522351F501AFF0093C316 /* MXDayPickerViewController.m in Sources */,
 				A3DAC8131F4D83B500F8A172 /* ShareViewController.m in Sources */,
 				A356493B1F3063F50014C41F /* MXSecondTypeTableCell.m in Sources */,
 				A35649091F3051080014C41F /* CCNStatusItemWindow.m in Sources */,
@@ -656,9 +692,11 @@
 				A354BE971F2AE50E00229083 /* main.m in Sources */,
 				A24793051F323B5600AECA8F /* NSButton+Extend.m in Sources */,
 				A354BEC71F2AED3500229083 /* MASCompositeConstraint.m in Sources */,
+				A385223A1F501C6C0093C316 /* MXCalendarView.m in Sources */,
 				A3DAC80E1F4D81E000F8A172 /* MXPopoverViewController.m in Sources */,
 				A33224291F31CCE800BE3726 /* MXPopUpViewController.m in Sources */,
 				A354BECE1F2AED3500229083 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A385223D1F5021E90093C316 /* MXDayCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

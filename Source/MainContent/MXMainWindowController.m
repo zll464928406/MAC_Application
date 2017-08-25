@@ -42,7 +42,8 @@
                                         @{@"type":@"NSPopUpButton", @"className":@"MXPopUpViewController"},
                                         @{@"type":@"NSButton", @"className":@"MXButtonViewController"},
                                         @{@"type":@"NSDatePicker", @"className":@"MXNSDatePickerViewController"},
-                                        @{@"type":@"NSPopover", @"className":@"MXPopoverViewController"}
+                                        @{@"type":@"NSPopover", @"className":@"MXPopoverViewController"},
+                                        @{@"type":@"NSDayPicker", @"className":@"MXDayPickerViewController"}
                                         ];
     [self.slideContentView reloadTableView];
 }
