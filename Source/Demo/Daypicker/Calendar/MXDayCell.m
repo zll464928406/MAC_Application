@@ -7,9 +7,9 @@
 //
 
 #import "MXDayCell.h"
+#import "MXCalendarView.h"
 
 @implementation MXDayCell
-/*
 - (instancetype)initWithFrame: (NSRect)frameRect
 {
     self = [super initWithFrame: frameRect];
@@ -22,51 +22,14 @@
     return self;
 }
 
-- (BOOL) isToday
-{
-    if(self.representedDate)
-    {
-        return 	[MLCalendarView isSameDate:self.representedDate date:[NSDate date]];
-    } else
-    {
-        return NO;
-    }
-}
-
-- (void) setSelected:(BOOL)selected
-{
-    _selected = selected;
-    self.needsDisplay = YES;
-}
-
-- (void) setRepresentedDate:(NSDate *)representedDate
-{
-    _representedDate = representedDate;
-    if(_representedDate)
-    {
-        NSCalendar *cal = [NSCalendar currentCalendar];
-        cal.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
-        unsigned unitFlags = NSCalendarUnitDay;// | NSCalendarUnitYear | NSCalendarUnitMonth;
-        NSDateComponents *components = [cal components:unitFlags fromDate:_representedDate];
-        NSInteger day = components.day;
-        self.title = [NSString stringWithFormat:@"%ld",day];
-    } else
-    {
-        self.title = @"";
-    }
-}
-
 - (void)drawRect:(NSRect)dirtyRect
 {
     if(self.owner)
     {
         [NSGraphicsContext saveGraphicsState];
-        
         NSRect bounds = [self bounds];
-        
         [self.owner.backgroundColor set];
         NSRectFill(bounds);
-        
         
         if(self.representedDate)
         {
@@ -82,8 +45,7 @@
             
             NSMutableParagraphStyle * aParagraphStyle = [[NSMutableParagraphStyle alloc] init];
             [aParagraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
-            [aParagraphStyle setAlignment:NSCenterTextAlignment];
-            
+            [aParagraphStyle setAlignment:NSTextAlignmentCenter];
             
             //title
             NSDictionary *attrs = @{NSParagraphStyleAttributeName: aParagraphStyle,NSFontAttributeName: self.font,NSForegroundColorAttributeName: self.owner.textColor};
@@ -96,7 +58,6 @@
                                   size.height);
             
             [self.title drawInRect:r withAttributes:attrs];
-            
             
             //line
             NSBezierPath* topLine = [NSBezierPath bezierPath];
@@ -125,6 +86,41 @@
         [NSGraphicsContext restoreGraphicsState];
     }
 }
-*/
+
+#pragma mark - Private Methods
+- (BOOL) isToday
+{
+    if(self.representedDate)
+    {
+        return 	[MXCalendarView isSameDate:self.representedDate date:[NSDate date]];
+    } else
+    {
+        return NO;
+    }
+}
+
+#pragma mark - Getter & Setter
+- (void) setSelected:(BOOL)selected
+{
+    _selected = selected;
+    self.needsDisplay = YES;
+}
+
+- (void) setRepresentedDate:(NSDate *)representedDate
+{
+    _representedDate = representedDate;
+    if(_representedDate)
+    {
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        cal.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+        unsigned unitFlags = NSCalendarUnitDay;// | NSCalendarUnitYear | NSCalendarUnitMonth;
+        NSDateComponents *components = [cal components:unitFlags fromDate:_representedDate];
+        NSInteger day = components.day;
+        self.title = [NSString stringWithFormat:@"%ld",day];
+    } else
+    {
+        self.title = @"";
+    }
+}
 
 @end
