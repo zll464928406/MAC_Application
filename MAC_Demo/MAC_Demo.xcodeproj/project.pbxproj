@@ -91,6 +91,8 @@
 		A38522361F501AFF0093C316 /* MXDayPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38522341F501AFF0093C316 /* MXDayPickerViewController.xib */; };
 		A385223A1F501C6C0093C316 /* MXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A38522391F501C6C0093C316 /* MXCalendarView.m */; };
 		A385223D1F5021E90093C316 /* MXDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A385223C1F5021E90093C316 /* MXDayCell.m */; };
+		A38BF96E1F5E6CDD006A5F90 /* MXSearchFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38BF96C1F5E6CDD006A5F90 /* MXSearchFieldViewController.m */; };
+		A38BF96F1F5E6CDD006A5F90 /* MXSearchFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38BF96D1F5E6CDD006A5F90 /* MXSearchFieldViewController.xib */; };
 		A3DAC80E1F4D81E000F8A172 /* MXPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAC80C1F4D81E000F8A172 /* MXPopoverViewController.m */; };
 		A3DAC80F1F4D81E000F8A172 /* MXPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DAC80D1F4D81E000F8A172 /* MXPopoverViewController.xib */; };
 		A3DAC8131F4D83B500F8A172 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DAC8111F4D83B500F8A172 /* ShareViewController.m */; };
@@ -223,6 +225,9 @@
 		A38522391F501C6C0093C316 /* MXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCalendarView.m; sourceTree = "<group>"; };
 		A385223B1F5021E90093C316 /* MXDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDayCell.h; sourceTree = "<group>"; };
 		A385223C1F5021E90093C316 /* MXDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDayCell.m; sourceTree = "<group>"; };
+		A38BF96B1F5E6CDD006A5F90 /* MXSearchFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSearchFieldViewController.h; sourceTree = "<group>"; };
+		A38BF96C1F5E6CDD006A5F90 /* MXSearchFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSearchFieldViewController.m; sourceTree = "<group>"; };
+		A38BF96D1F5E6CDD006A5F90 /* MXSearchFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXSearchFieldViewController.xib; sourceTree = "<group>"; };
 		A3DAC80B1F4D81E000F8A172 /* MXPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPopoverViewController.h; sourceTree = "<group>"; };
 		A3DAC80C1F4D81E000F8A172 /* MXPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPopoverViewController.m; sourceTree = "<group>"; };
 		A3DAC80D1F4D81E000F8A172 /* MXPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXPopoverViewController.xib; sourceTree = "<group>"; };
@@ -433,6 +438,7 @@
 		A356492B1F305F8A0014C41F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A38BF96A1F5E6C9C006A5F90 /* SearchField */,
 				A38522311F501A810093C316 /* Daypicker */,
 				A3DAC80A1F4D81BE00F8A172 /* Popover */,
 				A24792FD1F323ABE00AECA8F /* Button */,
@@ -527,6 +533,16 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		A38BF96A1F5E6C9C006A5F90 /* SearchField */ = {
+			isa = PBXGroup;
+			children = (
+				A38BF96B1F5E6CDD006A5F90 /* MXSearchFieldViewController.h */,
+				A38BF96C1F5E6CDD006A5F90 /* MXSearchFieldViewController.m */,
+				A38BF96D1F5E6CDD006A5F90 /* MXSearchFieldViewController.xib */,
+			);
+			path = SearchField;
+			sourceTree = "<group>";
+		};
 		A3DAC80A1F4D81BE00F8A172 /* Popover */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +635,7 @@
 				A356495D1F306DFC0014C41F /* clip_full_screen.png in Resources */,
 				A35649711F306DFC0014C41F /* star@2x.png in Resources */,
 				A35648F51F3049910014C41F /* status_logo_black@2x.png in Resources */,
+				A38BF96F1F5E6CDD006A5F90 /* MXSearchFieldViewController.xib in Resources */,
 				A35649351F3061CD0014C41F /* app_common@2x.png in Resources */,
 				A35649781F306DFC0014C41F /* upload_smell@2x.png in Resources */,
 				A35649691F306DFC0014C41F /* more.png in Resources */,
@@ -673,6 +690,7 @@
 				A354BEC81F2AED3500229083 /* MASConstraint.m in Sources */,
 				A354BED01F2AED3500229083 /* ViewController+MASAdditions.m in Sources */,
 				A35649071F3051080014C41F /* CCNStatusItem.m in Sources */,
+				A38BF96E1F5E6CDD006A5F90 /* MXSearchFieldViewController.m in Sources */,
 				A356490A1F3051080014C41F /* CCNStatusItemWindowBackgroundView.m in Sources */,
 				A35649081F3051080014C41F /* CCNStatusItemDropView.m in Sources */,
 				A354BECA1F2AED3500229083 /* MASLayoutConstraint.m in Sources */,

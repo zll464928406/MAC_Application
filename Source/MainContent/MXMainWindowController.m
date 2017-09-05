@@ -43,7 +43,8 @@
                                         @{@"type":@"NSButton", @"className":@"MXButtonViewController"},
                                         @{@"type":@"NSDatePicker", @"className":@"MXNSDatePickerViewController"},
                                         @{@"type":@"NSPopover", @"className":@"MXPopoverViewController"},
-                                        @{@"type":@"NSDayPicker", @"className":@"MXDayPickerViewController"}
+                                        @{@"type":@"NSDayPicker", @"className":@"MXDayPickerViewController"},
+                                        @{@"type":@"NSSearchField", @"className":@"MXSearchFieldViewController"}
                                         ];
     [self.slideContentView reloadTableView];
 }
