@@ -31,6 +31,7 @@
     self.popover1 = [[NSPopover alloc] init];
     self.popover1.contentViewController = self.shareViewController;
     self.popover1.behavior = NSPopoverBehaviorApplicationDefined;// 当前方式需要手动关 , 选择其他方式可以点击空白处自动关闭
+    self.popover1.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
     self.popover1.delegate = self;
 }
 
